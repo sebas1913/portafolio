@@ -1,0 +1,26 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.footerContainer{
+	position: relative;
+    bottom: 0;
+    width: 70%;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    color: $color-secondary;
+
+    .copyright{
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+
+    .socialContainer{
+        a{
+            text-decoration: none;
+            color: $color-secondary;
+            margin: 0.5rem;
+        }
+    }
+    
+}

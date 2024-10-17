@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+@import '../../styles//mixins.scss';
+
+.container{
+    width: 70%;
+    margin: 3.5% auto;
+    
+    .descriptionContainer{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $color-secondary;
+        width: 65%;
+
+
+        .title{
+            font-size: 3.3rem;
+            font-weight: 800;
+        }
+
+        .description{
+            font-size: 1.45rem;
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+        }
+
+        .experience{
+            font-size: 0.92rem;
+        }
+
+        .buttonContainer{
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+
+            a{
+                text-decoration: none;
+            }
+
+            button{
+                color: $color-primary;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border: none;
+                background: $color-secondary;
+                @include border-radius(0.25rem);
+                font-family: var(--font-principal);
+                font-weight: 700;
+                padding: 0.3rem 0.8rem;
+                font-size: 1rem;
+                cursor: pointer;
+                width: 9rem;
+                
+
+
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+
+
+    }
+}
