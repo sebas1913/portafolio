@@ -8,7 +8,7 @@ export default function About() {
 
         <>
             <ProfileCard />
-            {/* <Experience /> */}
+            <Experience />
             <Technologies />
             <AboutMe />
         </>
