@@ -1,0 +1,30 @@
+@import '../../../styles/variables.scss';
+
+.containerProjects{
+    width: 70%;
+    margin: 5% auto;
+    color: $color-secondary;
+
+    .title{
+        font-size: 3.3rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerProjects{
+        width: 90%;
+		
+        .title{
+            margin-top: 4rem;
+        }
+    }
+}

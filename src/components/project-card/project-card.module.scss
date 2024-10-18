@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+
+.card {
+    color: $color-secondary;
+    width: 45%;
+
+    .containerImage {
+        width: 90%;
+        margin: auto;
+
+        .image {
+            object-fit: cover;
+            max-width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover {
+            .image {
+                transform: scale(1.08);
+            }
+        }
+    }
+
+    .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1% 2%;
+
+        .containerButton {
+            .button {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .card{
+        width: 80%;
+
+        .description{
+            margin: 0 5%;
+        }
+    }
+}

@@ -13,6 +13,13 @@
     .copyright{
         font-weight: 700;
         font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 2.5rem;
+            margin-right: 0.5rem;
+        }
     }
 
     .socialContainer{
@@ -22,5 +29,24 @@
             margin: 0.5rem;
         }
     }
-    
+}
+
+@media (max-width: 600px) {
+    .footerContainer{
+        width: 90%;
+
+        .copyright{
+            font-size: 0.9rem;
+
+            .img{
+                width: 2rem;
+            }
+        }
+
+        .socialContainer{
+            a{
+                margin: 0.3rem;
+            }
+        }
+    }
 }

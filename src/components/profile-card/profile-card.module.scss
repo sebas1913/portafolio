@@ -1,11 +1,49 @@
 @import '../../styles/variables.scss';
-@import '../../styles//mixins.scss';
+@import '../../styles/mixins.scss';
 
-.container{
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translateY(-15px) rotate(-2deg) scale(1.05);
+    }
+    50% {
+        transform: translateY(-20px) rotate(2deg) scale(1.1);
+    }
+    75% {
+        transform: translateY(-15px) rotate(-2deg) scale(1.05);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg) scale(1);
+    }
+}
+
+.container {
     width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 3.5% auto;
-    
-    .descriptionContainer{
+
+    .logoContainer {
+        cursor: pointer;
+        width: 23%;
+        margin: auto;
+        animation: float 6s ease-in-out infinite;
+        filter: drop-shadow(0 0.1rem 0.5rem rgba(255, 255, 255, 0.7));
+
+        img {
+            max-width: 100%;
+            transition: filter 0.3s ease-in-out;
+        }
+
+        &:hover {
+            filter: drop-shadow(0 0.1rem 0.7rem rgba(255, 255, 255, 1));
+        }
+    }
+
+    .descriptionContainer {
         height: 80vh;
         display: flex;
         flex-direction: column;
@@ -13,32 +51,31 @@
         color: $color-secondary;
         width: 65%;
 
-
-        .title{
+        .title {
             font-size: 3.3rem;
             font-weight: 800;
         }
 
-        .description{
+        .description {
             font-size: 1.45rem;
             font-weight: 600;
             margin: 0 0 1rem 0;
         }
 
-        .experience{
+        .experience {
             font-size: 0.92rem;
         }
 
-        .buttonContainer{
+        .buttonContainer {
             margin-top: 1rem;
             display: flex;
             gap: 1rem;
 
-            a{
+            a {
                 text-decoration: none;
             }
 
-            button{
+            button {
                 color: $color-primary;
                 display: flex;
                 justify-content: space-around;
@@ -52,15 +89,25 @@
                 font-size: 1rem;
                 cursor: pointer;
                 width: 9rem;
-                
-
 
                 &:active {
                     transform: scale(0.95);
                 }
             }
         }
+    }
+}
 
-
+@media (max-width: 600px) {
+    .container{
+        width: 90%;
+        .descriptionContainer{
+            .title{
+                font-size: 2.5rem;
+            }
+            .description{
+                font-size: 1.2rem;
+            }
+        }
     }
 }

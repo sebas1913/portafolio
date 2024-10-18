@@ -32,3 +32,19 @@
 		
 	}
 }
+
+
+@media (max-width: 600px) {
+    .container{
+        width: 90%;
+		height: 30rem;
+		justify-content: left;
+
+        .skills{
+            .skillContainer{
+                width: 45%;
+				margin: 2% auto;
+            }
+        }
+    }
+}

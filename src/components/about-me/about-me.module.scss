@@ -20,5 +20,11 @@
             margin-bottom: 1rem;
         }
     }
+}
 
+@media (max-width: 600px) {
+    .container{
+        width: 90%;
+		height: 30rem;
+    }
 }

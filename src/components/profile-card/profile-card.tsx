@@ -28,6 +28,9 @@ const ProfileCard: React.FC = () => {
 
                 </div>
             </div>
+            <div className={styles.logoContainer}>
+                <img src="/images/logo.png" alt="" />
+            </div>
         </div>
     );
 }

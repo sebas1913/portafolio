@@ -9,3 +9,10 @@
         font-size: 2.6rem;
     }
 }
+
+@media (max-width: 600px) {
+    .container{
+        width: 90%;
+		// height: 30rem;
+    }
+}
