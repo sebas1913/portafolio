@@ -11,10 +11,10 @@ const Projects: React.FC = () => {
             githubUrl: "https://github.com/sebas1913/UrgenciasYa-Frontend/tree/develop"
         },
         {
-            name: "Urgencias Ya",
-            imageUrl: "/images/urgenciasYa.png",
-            liveUrl: "https://urgenciasya-frontend-3.onrender.com/",
-            githubUrl: "https://github.com/sebas1913/UrgenciasYa-Frontend/tree/develop"
+            name: "Portafolio",
+            imageUrl: "/images/portafolio.png",
+            liveUrl: "https://portafolio-sebas-osorno-c.vercel.app/",
+            githubUrl: "https://github.com/sebas1913/portafolio"
         }
 
     ];

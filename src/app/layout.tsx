@@ -6,7 +6,9 @@ export const metadata: Metadata = {
   title: 'Portafolio',
   description: 'Portafolio de Sebastián Osorno Castrillón',
   keywords: ['Next.js', 'Develop', 'Desarrollo', 'Desarrollador', 'TypeScript', 'Sebastián Osorno'],
-  viewport: 'width=device-width, initial-scale=1.0',
+  icons: {
+    icon: '/images/logo.png'
+  }
 };
 
 const raleway = Raleway({ subsets: ["latin"] });

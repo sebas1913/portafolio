@@ -84,7 +84,8 @@
                 background: $color-secondary;
                 @include border-radius(0.25rem);
                 font-family: var(--font-principal);
-                font-weight: 700;
+                font-weight: 800;
+                letter-spacing: 0.05rem;
                 padding: 0.3rem 0.8rem;
                 font-size: 1rem;
                 cursor: pointer;
