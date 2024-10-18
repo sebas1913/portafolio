@@ -15,10 +15,12 @@ const ProfileCard: React.FC = () => {
                 <p className={styles.description}>Desarrollador frontend junior</p>
                 <p className={styles.experience}>Me especializo en crear aplicaciones web modernas y adaptables, fusionando diseño atractivo con una experiencia de usuario fluida y accesible</p>
                 <div className={styles.buttonContainer}>
-                    <Button className={styles.button} type='button'>
-                        Currículum <PiReadCvLogo size={25}  />
-                    </Button>
-                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-osorno-castrill%C3%B3n/" target='_blank' rel='external noopener noreferrer'>
+                    <a href="https://drive.google.com/file/d/1DjZKea3hl0QtgaxmCze5P5iNgE93SvId/view?usp=drive_link" target='_blank' rel='noopener noreferrer'>
+                        <Button className={styles.button} type='button'>
+                            Currículum <PiReadCvLogo size={25} />
+                        </Button></a>
+                    <a href="https://www.linkedin.com/in/sebasti%C3%A1n-osorno-castrill%C3%B3n/" target='_blank' rel='noopener noreferrer'
+                    >
                         <Button className={styles.button} type='button'>
                             LinkedIn <IoLogoLinkedin size={25} />
 
