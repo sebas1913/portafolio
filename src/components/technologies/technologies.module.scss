@@ -3,7 +3,7 @@
 
 .container{
 	width: 70%;
-    margin: auto;
+    margin: 5% auto;
     color: $color-secondary;
 	height: 25rem;
 
@@ -19,7 +19,7 @@
 
 		.skillContainer{
 			width: 32%;
-			margin: 1% auto;
+			margin: 3% auto;
 			box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15);
 			display: flex;
 			align-items: center;
@@ -48,7 +48,6 @@
     .container{
         width: 90%;
 		height: 30rem;
-		justify-content: left;
 
         .skills{
             .skillContainer{

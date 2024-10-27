@@ -7,8 +7,8 @@ const AboutMe: React.FC = () => {
     return (
         <motion.div
             className={styles.container}
-            initial={{ opacity: 0, x: 50, y: 50 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
         >
             <div className={styles.description}>
