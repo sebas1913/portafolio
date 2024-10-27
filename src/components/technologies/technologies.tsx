@@ -1,9 +1,16 @@
+"use client";
 import React from "react";
+import { motion } from 'framer-motion';
 import styles from './technologies.module.scss';
 
 const Technologies: React.FC = () => {
     return (
-        <div className={styles.container}>
+        <motion.div
+            className={styles.container}
+            initial={{ opacity: 0, x: -50, y: 50 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ duration: 1 }}
+        >
             <h1 className={styles.title}>Habilidades</h1>
             <div className={styles.skills}>
                 <div className={styles.skillContainer}>
@@ -17,7 +24,7 @@ const Technologies: React.FC = () => {
                 </div>
 
                 <div className={styles.skillContainer}>
-                    <img className={styles.image} src="/images/svgs/SASS.svg" alt="Sass" title="Sass"/>
+                    <img className={styles.image} src="/images/svgs/SASS.svg" alt="Sass" title="Sass" />
                     <strong>SASS</strong>
                 </div>
 
@@ -27,7 +34,7 @@ const Technologies: React.FC = () => {
                 </div>
 
                 <div className={styles.skillContainer}>
-                    <img className={styles.image} src="/images/svgs/TS.svg" alt="Typescript" title="Typescript"/>
+                    <img className={styles.image} src="/images/svgs/TS.svg" alt="Typescript" title="Typescript" />
                     <strong>Typescript</strong>
                 </div>
 
@@ -47,18 +54,12 @@ const Technologies: React.FC = () => {
                 </div>
 
                 <div className={styles.skillContainer}>
-                    <img className={styles.image} src="/images/svgs/Git.svg" alt="Git" title="GIT"/>
+                    <img className={styles.image} src="/images/svgs/Git.svg" alt="Git" title="GIT" />
                     <strong>GIT</strong>
                 </div>
-
-
             </div>
-        </div>
-    )
+        </motion.div>
+    );
 }
 
 export default Technologies;
-
-
-
-
