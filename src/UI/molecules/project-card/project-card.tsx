@@ -1,8 +1,7 @@
 import React from "react";
 import styles from './project-card.module.scss';
 import Button from "@/UI/atoms/button/button";
-import { Icons } from "@/UI/atoms";
-
+import { Icons } from "@/UI/atoms/icons/Icons";
 interface CardProjectProps {
     name: string;
     imageUrl: string;
