@@ -1,11 +1,11 @@
 import styles from './formField.module.scss';
-import Label, { LabelProps } from "@/UI/atoms/label/Label";
+import Label from "@/UI/atoms/label/Label";
 import Input, { InputProps } from "@/UI/atoms/input/Input";
 
 
 interface FormField extends InputProps {
     label: string;
-    labelProps?: LabelProps;
+    labelProps?: React.LabelHTMLAttributes<HTMLLabelElement>;
 }
 
 const FormField: React.FC<FormField> = ({

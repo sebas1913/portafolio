@@ -1,7 +1,6 @@
+import React from 'react';
 
-export interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {}
-
-const Label: React.FC<LabelProps> = ({children, ...props}) => {
+const Label: React.FC<React.LabelHTMLAttributes<HTMLLabelElement>> = ({ children, ...props }) => {
     return (
         <label {...props}>
             {children}
