@@ -1,0 +1,25 @@
+@import '../../../styles/mixins.scss';
+
+.formField {
+    display: flex;
+    flex-direction: column;
+
+    .input {
+        @include border-radius(0.3rem);
+        font-family: var(--font-principal);
+        width: auto;
+        padding: 0.4rem;
+        border: none;
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .label{
+        font-weight: 600;
+        margin: 0.2rem 0;
+    }
+}
