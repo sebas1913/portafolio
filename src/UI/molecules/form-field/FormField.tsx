@@ -1,6 +1,7 @@
 import styles from './formField.module.scss';
-import Input, { InputProps } from "@/UI/atoms/input/Input";
 import Label, { LabelProps } from "@/UI/atoms/label/Label";
+import Input, { InputProps } from "@/UI/atoms/input/Input";
+
 
 interface FormField extends InputProps {
     label: string;
