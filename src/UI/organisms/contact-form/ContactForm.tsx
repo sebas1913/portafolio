@@ -29,47 +29,54 @@ const ContactForm: React.FC = () => {
     }
 
     return (
-        <form className={styles.form} onSubmit={handleSubmit}>
-            <FormField
-                id="name"
-                label="Nombre"
-                type="text"
-                name="name"
-                placeholder="Ingresa tu nombre"
-                value={name}
-                onChange={handleNameChange}
-                required
-            />
-            <ValidationError prefix="Name" field="name" errors={state.errors} />
+        <div className={styles.container}>
 
-            <FormField
-                id="email"
-                label="Correo Electrónico"
-                type="email"
-                name="email"
-                placeholder="Ingresa tu correo electrónico"
-                value={email}
-                onChange={handleEmailChange}
-                required
-            />
-            <ValidationError prefix="Email" field="email" errors={state.errors} />
+            <form className={styles.form} onSubmit={handleSubmit}>
+                <FormField
+                    id="name"
+                    label="Nombre"
+                    type="text"
+                    name="name"
+                    placeholder="Ingresa tu nombre"
+                    value={name}
+                    onChange={handleNameChange}
+                    required
+                />
+                <ValidationError prefix="Name" field="name" errors={state.errors} />
 
-            <FormField
-                id="message"
-                label="Mensaje"
-                type="text"
-                name="message"
-                placeholder="Ingresa tu mensaje"
-                value={message}
-                onChange={handleMessageChange}
-                required
-            />
-            <ValidationError prefix="Message" field="message" errors={state.errors} />
+                <FormField
+                    id="email"
+                    label="Correo Electrónico"
+                    type="email"
+                    name="email"
+                    placeholder="Ingresa tu correo electrónico"
+                    value={email}
+                    onChange={handleEmailChange}
+                    required
+                />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
 
-            <Button className={styles.button} type="submit" disabled={state.submitting}>
-                Enviar
-            </Button>
-        </form>
+                <FormField
+                    id="message"
+                    label="Mensaje"
+                    type="text"
+                    name="message"
+                    placeholder="Ingresa tu mensaje"
+                    value={message}
+                    onChange={handleMessageChange}
+                    required
+                />
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
+
+                <Button className={styles.button} type="submit" disabled={state.submitting}>
+                    Enviar
+                </Button>
+            </form>
+            <div className={styles.imageContainer}>
+                <img className={styles.image} src="/images/cohete.jpg" alt="" />
+            </div>
+        </div>
+
     );
 };
 

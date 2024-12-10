@@ -1,19 +1,86 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/variables.scss';
 
-.form{
-    width: 45%;
-    .button{
-        @include border-radius(0.5rem);
-        padding: 0.5rem;
-        width: 100%;
-        margin: 0.5rem 0;
-        font-family: var(--font-principal);
-        background-color: $color-tertiary;
-        color: $color-secondary;
-        border: none;
-        font-weight: 800;
-        font-size: 0.9rem;
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0);
+    }
+
+    25% {
+        transform: translate(-1px, 1px) rotate(-0.5deg);
+    }
+
+    50% {
+        transform: translate(1px, -1px) rotate(0.5deg);
+    }
+
+    75% {
+        transform: translate(-1px, 1px) rotate(-0.5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .form {
+        width: 55%;
+        padding: 0 1rem;
+
+        .button {
+            @include border-radius(0.5rem);
+            padding: 0.5rem;
+            width: 100%;
+            margin: 0.5rem 0;
+            font-family: var(--font-principal);
+            background-color: $color-tertiary;
+            color: $color-secondary;
+            border: none;
+            font-weight: 800;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+    }
+
+    .imageContainer {
         cursor: pointer;
-    }        
+        animation: shake 0.8s ease-in-out infinite;
+        margin: auto;
+        filter: drop-shadow(0 0.1rem 0.5rem rgba(255, 255, 255, 0.7));
+
+        .image {
+            border-radius: 50%;
+            width: 14rem;
+        }
+
+        &:hover {
+            filter: drop-shadow(0 0.1rem 0.7rem rgba(255, 255, 255, 1));
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .form {
+            padding: 0;
+            width: 100%;
+        }
+
+        .imageContainer{
+            .image{
+                display: none;
+            }
+        }
+    }
 }

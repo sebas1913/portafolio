@@ -11,3 +11,13 @@
         margin-bottom: 2rem;
     }
 }
+
+@media (max-width: 600px) {
+    .container{
+        width: 90%;
+		
+        .title{
+            margin-top: 5rem;
+        }
+    }
+}

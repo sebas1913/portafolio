@@ -11,7 +11,7 @@
     }
 
     50% {
-        transform: translateY(-20px) rotate(2deg) scale(1.1);
+        transform: translateY(-5px) rotate(2deg) scale(1.1);
     }
 
     75% {
@@ -32,8 +32,7 @@
 
     .logoContainer {
         cursor: pointer;
-        width: 20%;
-        margin: auto;
+        width: 27%;
         animation: float 6s ease-in-out infinite;
         filter: drop-shadow(0 0.1rem 0.5rem rgba(255, 255, 255, 0.7));
 
@@ -108,18 +107,28 @@
         width: 90%;
 
         .logoContainer {
-            width: 35%;
+            width: 20%;
+            margin-bottom: 2rem;
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 1;
         }
 
         .descriptionContainer {
+            width: 90%;
             height: 90vh;
 
             .title {
-                font-size: 2.2rem;
+                font-size: 2.1rem;
             }
 
             .description {
-                font-size: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .experience {
+                font-size: 0.9rem;
             }
         }
     }

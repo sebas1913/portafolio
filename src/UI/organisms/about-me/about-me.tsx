@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from 'framer-motion'
+import { motion } from 'framer-motion';
 import styles from './about-me.module.scss';
 import Paragraph from "@/UI/atoms/paragraph/Paragraph";
 import Title from "@/UI/atoms/title/Title";

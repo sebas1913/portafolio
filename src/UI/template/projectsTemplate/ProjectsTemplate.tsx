@@ -1,3 +1,5 @@
+"use client";
+import { motion } from 'framer-motion';
 import CardProject from '@/UI/molecules/project-card/project-card';
 import styles from './projects.module.scss'
 import Title from '@/UI/atoms/title/Title';
@@ -26,21 +28,28 @@ const ProjectsTemplate = () => {
     ];
 
     return (
-        <div className={styles.containerProjects}>
-            <Title level={1} className={styles.title}>Proyectos</Title>
-            <div className={styles.projects}>
-                {projects.map((project, index) => (
-                    <CardProject
-                        key={index}
-                        name={project.name}
-                        imageUrl={project.imageUrl}
-                        liveUrl={project.liveUrl}
-                        githubUrl={project.githubUrl}
-                    />
-                ))}
-            </div>
+        <motion.div
+            className={styles.container}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+        >
+            <div className={styles.containerProjects}>
+                <Title level={1} className={styles.title}>Proyectos</Title>
+                <div className={styles.projects}>
+                    {projects.map((project, index) => (
+                        <CardProject
+                            key={index}
+                            name={project.name}
+                            imageUrl={project.imageUrl}
+                            liveUrl={project.liveUrl}
+                            githubUrl={project.githubUrl}
+                        />
+                    ))}
+                </div>
 
-        </div>
+            </div>
+        </motion.div>
     )
 }
 
