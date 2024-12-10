@@ -25,7 +25,14 @@ const ContactForm: React.FC = () => {
     };
 
     if (state.succeeded) {
-        return <Title level={2}>¡Gracias por tu mensaje!</Title>;
+        return(
+            <div className={styles.success}>
+                <Title level={2}>¡Gracias por tu mensaje!</Title>
+                <div>
+                    
+                </div>
+            </div>
+        );
     }
 
     return (

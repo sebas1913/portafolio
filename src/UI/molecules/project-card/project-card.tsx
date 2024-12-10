@@ -13,7 +13,7 @@ const CardProject: React.FC<CardProjectProps> = ({ name, imageUrl, liveUrl, gith
     return (
         <div className={styles.card}>
             <div className={styles.containerImage}>
-                <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                <a href={liveUrl} target="_blank" rel="noopener noreferrer" aria-label={`Ver repositotio de ${name} en GitHub (se abre en una nueva pestaña)`}>
                     <img className={styles.image} src={imageUrl} alt={`Preview de ${name}`} />
                 </a>
             </div>

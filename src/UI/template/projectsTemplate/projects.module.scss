@@ -16,7 +16,6 @@
         flex-wrap: wrap;
         gap: 2rem;
         justify-content: space-between;
-        justify-content: center;
     }
 }
 
@@ -26,6 +25,11 @@
 		
         .title{
             margin-top: 5rem;
+        }
+
+        .projects{
+            display: flex;
+            justify-content: center;
         }
     }
 }
