@@ -13,6 +13,12 @@ const ProjectsTemplate = () => {
             githubUrl: "https://github.com/sebas1913/UrgenciasYa-Frontend/tree/develop"
         },
         {
+            name: "PlayBall",
+            imageUrl: "/images/playBall.png",
+            liveUrl: "https://api-football-eight.vercel.app/",
+            githubUrl: "https://github.com/sebas1913/api-football"
+        },
+        {
             name: "Portafolio",
             imageUrl: "/images/portafolio.png",
             liveUrl: "https://portafolio-sebas-osorno-c.vercel.app/",
