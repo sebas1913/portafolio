@@ -26,17 +26,17 @@ const Technologies: React.FC = () => {
 
                 <div className={styles.skillContainer}>
                     <img className={styles.image} src="/images/svgs/SASS.svg" alt="Sass" title="Sass" />
-                    <strong>SASS</strong>
+                    <strong>Sass</strong>
                 </div>
 
                 <div className={styles.skillContainer}>
                     <img className={styles.image} src="/images/svgs/JS.svg" alt="Javascript" title="Javascript" />
-                    <strong>Javascript</strong>
+                    <strong>JavaScript</strong>
                 </div>
 
                 <div className={styles.skillContainer}>
                     <img className={styles.image} src="/images/svgs/TS.svg" alt="Typescript" title="Typescript" />
-                    <strong>Typescript</strong>
+                    <strong>TypeScript</strong>
                 </div>
 
                 <div className={styles.skillContainer}>
@@ -46,7 +46,7 @@ const Technologies: React.FC = () => {
 
                 <div className={styles.skillContainer}>
                     <img className={styles.image} src="/images/svgs/nextjs.svg" alt="Next JS" title="Next JS" />
-                    <strong>Next JS</strong>
+                    <strong>Next.js</strong>
                 </div>
 
                 <div className={styles.skillContainer}>
@@ -56,7 +56,7 @@ const Technologies: React.FC = () => {
 
                 <div className={styles.skillContainer}>
                     <img className={styles.image} src="/images/svgs/Git.svg" alt="Git" title="GIT" />
-                    <strong>GIT</strong>
+                    <strong>Git</strong>
                 </div>
             </div>
         </motion.div>
