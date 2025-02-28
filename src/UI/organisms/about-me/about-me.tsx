@@ -16,13 +16,13 @@ const AboutMe: React.FC = () => {
             <div className={styles.description}>
                 <Title level={1} className={styles.title}>Sobre mí</Title>
                 <Paragraph className={styles.text}>
-                    Soy técnico en programación de software, con experiencia en HTML, CSS, SCSS, JavaScript, TypeScript, React y Next.js.
+                    Soy un desarrollador frontend apasionado por la optimización de interfaces, la accesibilidad web y el desarrollo de soluciones escalables. Con experiencia en React, Next.js, TypeScript y SASS, me especializo en construir aplicaciones eficientes, accesibles y de alto rendimiento.
                 </Paragraph>
                 <Paragraph className={styles.text}>
-                    Durante mi tiempo como practicante en la empresa SoftwareONE Colombia, pertenecí al proyecto CHEC de EPM donde jugué un rol clave en el desarrollo y mantenimiento del portal web basado en el gestor de contenido DotNetNuke (DNN). Trabajé con JavaScript, CSS y SCSS para mejorar la funcionalidad y diseño del sitio. Mi trabajo incluyó la optimización del código y la mejora de la accesibilidad utilizando herramientas como SonarQube y UserWay.
+                    Durante mi tiempo en SoftwareONE Colombia, trabajé en el portal web de CHEC (EPM) utilizando DNN, donde optimicé código con SonarQube y mejoré la accesibilidad con UserWay. Además, he desarrollado proyectos freelance como UrgenciasYa, PlayBall, y SiekGPT, aplicando integración de APIs, gestión de datos con Prisma y las últimas versiones de Next.js.
                 </Paragraph>
                 <Paragraph className={styles.text}>
-                    Me apasiona la tecnología y el aprendizaje continuo, lo que me impulsa a buscar siempre nuevas oportunidades para enfrentar desafíos y contribuir al éxito de proyectos innovadores. Mi objetivo es seguir creciendo como desarrollador, entregando soluciones elegantes, funcionales y de alto impacto.
+                    Me motiva el aprendizaje continuo y la búsqueda de soluciones innovadoras. Mi objetivo es seguir creciendo como desarrollador y aportar valor a proyectos desafiantes con código limpio y bien estructurado.
                 </Paragraph>
 
             </div>
