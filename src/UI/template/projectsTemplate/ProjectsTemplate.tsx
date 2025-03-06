@@ -7,6 +7,13 @@ import Title from '@/UI/atoms/title/Title';
 const ProjectsTemplate = () => {
     const projects = [
         {
+            name: "MedMinder",
+            imageUrl: "/images/MedMinder.png",
+            liveUrl: "https://med-minder-five.vercel.app/",
+            githubUrl: "https://github.com/sebas1913/med-minder",
+            description: "MedMinder es una aplicación web en construcción, desarrollada con Next.js 15 y NextAuth para autenticación con Google. Permitirá a los usuarios gestionar su medicación, recibir recordatorios automáticos a través de Firebase y acceder a información confiable sobre sus medicamentos mediante la API de RxNorm."
+        },
+        {
             name: "Urgencias Ya",
             imageUrl: "/images/urgenciasYa.png",
             liveUrl: "https://urgenciasya-frontend-3.onrender.com/",

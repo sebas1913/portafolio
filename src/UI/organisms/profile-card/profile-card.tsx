@@ -16,7 +16,7 @@ const ProfileCard: React.FC = () => {
             transition={{ duration: 1 }}>
             <div className={styles.descriptionContainer}>
                 <Title level={1} className={styles.title}>Hola, soy Sebastián</Title>
-                <Paragraph className={styles.description}>Desarrollador frontend junior</Paragraph>
+                <Paragraph className={styles.description}>Desarrollador frontend</Paragraph>
                 <Paragraph className={styles.experience}>Me especializo en crear aplicaciones web modernas y adaptables, fusionando diseño atractivo con una experiencia de usuario fluida y accesible.</Paragraph>
                 <div className={styles.buttonContainer}>
                     <a href="https://drive.google.com/file/d/1DjZKea3hl0QtgaxmCze5P5iNgE93SvId/view?usp=drive_link" target='_blank' rel='noopener noreferrer'>

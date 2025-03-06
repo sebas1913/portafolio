@@ -50,9 +50,14 @@ const Technologies: React.FC = () => {
                 </div>
 
                 <div className={styles.skillContainer}>
+                    <img className={styles.image} src="/images/svgs/Firebase.svg" alt="Firebase" title="Firebase" />
+                    <strong>Firebase</strong>
+                </div>
+{/* 
+                <div className={styles.skillContainer}>
                     <img className={styles.image} src="/images/svgs/bootstrap.svg" alt="Bootstrap" title="Bootstrap" />
                     <strong>Bootstrap</strong>
-                </div>
+                </div> */}
 
                 <div className={styles.skillContainer}>
                     <img className={styles.image} src="/images/svgs/Git.svg" alt="Git" title="GIT" />
